@@ -68,7 +68,7 @@ class DeltaSoliviaInverter {
         ENQ,      // enquire
         address_, // for inverter with address
         0x02,     // number of data bytes, including commands
-        0x60,     // command
+        0x96,     // command edited to 0x96, from Hint via ChatGPT, for Delta H4A inverter
         0x01,     // subcommand
         0x00,     // CRC low
         0x00,     // CRC high
