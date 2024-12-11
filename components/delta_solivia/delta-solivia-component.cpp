@@ -49,7 +49,7 @@ bool DeltaSoliviaComponent::process_frame(const Frame& frame) {
 
 // validate packet header
 bool DeltaSoliviaComponent::validate_header(const Frame& frame) {
-  if (frame.size() < 6 || frame[0] != STX || frame[1] != ACK || frame[2] == 0 || frame[4] != 0x60 || frame[5] != 0x01) {
+  if (frame.size() < 6 || frame[0] != STX || frame[1] != ACK || frame[2] == 0 || frame[4] != 0x96 || frame[5] != 0x01) {
     return false;
   }
 
